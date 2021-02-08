@@ -91,7 +91,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 4rem;
-  width: 100%;
+  width: 90%;
   max-width: 1280px;
   margin: 0 auto;
   margin-bottom: 6rem;
@@ -128,16 +128,19 @@ h1 {
   background-color: #303841;
   text-decoration: none;
 }
+
 .code {
   color: #303841;
   font-size: 20px;
   grid-row-start: 3;
 }
+
 .individual-project:hover code,
-.individual-project:focus code {
+.individual-project:focus-within code {
   color: #fb7d50;
   transition: color 0.5s ease-out;
 }
+
 .btn-show-all {
   padding: 1rem;
   background-color: #303841;
