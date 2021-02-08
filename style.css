@@ -147,13 +147,14 @@ h1 {
   color: white;
   cursor: pointer;
   width: 10rem;
+  transition: all 0.5s ease;
 }
 .btn-show-all i {
   padding-left: 7px;
+  transition: transform 0.5s ease;
 }
 .btn-show-all:hover i {
   transform: translateX(6px);
-  transition: transform 0.7s ease-out;
 }
 .btn-show-all:hover {
   background-color: orange;
@@ -228,12 +229,13 @@ h1 {
   background-color: #303841;
   padding: 2rem;
   border-top: 0.3rem solid #be3144;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .text1 {
   color: white;
   font-size: 1.2rem;
+  margin-left: 2em;
 }
 #text-footer {
   text-align: justify;
@@ -241,6 +243,7 @@ h1 {
 }
 #rights {
   font-style: italic;
+  margin-right: 2em;
 }
 .link-footer {
   text-decoration: none;
