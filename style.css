@@ -7,10 +7,13 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+}
+
 img {
   display: block;
   width: 100%;
-  height: auto;
   object-fit: cover;
   object-position: top;
 }
@@ -111,26 +114,31 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+
+.bottom-section {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  column-gap: 1em;
+  align-content: center;
+  justify-content: center;
+  padding: 1em 0;
+}
 .text-in-project {
-  display: inline-block;
   color: white;
   font-size: 1.2rem;
-  width: 100%;
-  padding: 1.6rem 0;
-  background-color: #303841;
-  text-decoration: none;
 }
-
 .code {
   color: #303841;
-  font-size: 20px;
-  grid-row-start: 3;
+  font-size: 1.5rem;
+  margin: auto 0;
 }
 
 .individual-project:hover code,
 .individual-project:focus-within code {
   color: #fb7d50;
   transition: color 0.5s ease-out;
+  text-decoration: none;
 }
 
 .btn-show-all {
