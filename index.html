@@ -21,48 +21,41 @@
     <title>Personal portfolio</title>
   </head>
   <body>
-    <nav id="navbar" class="navigation">
-      <ul class="unordered-list">
-        <li><a class="items" href="#welcome-section">About</a></li>
-        <li><a class="items" href="#projects">Work</a></li>
-        <li><a class="items" href="#contact-section">Contact</a></li>
+    <nav class="navbar">
+      <ul>
+        <li><a class="navbar__item" href="#about">About</a></li>
+        <li><a class="navbar__item" href="#work">Work</a></li>
+        <li><a class="navbar__item" href="#contact">Contact</a></li>
       </ul>
     </nav>
 
-    <div id="welcome-section" class="welcome-section">
-      <div class="text-and-header-in-welcome">
-        <h1>Hey there, I am Davor.</h1>
-        <p class="text-in-welcome">
-          I am currently studying web development.<br />Thank you for checking
-          out my portfolio!
-        </p>
-      </div>
+    <div class="about" id="about">
+      <h1>Hey there, I am Davor.</h1>
+      <p class="about__text">
+        I am currently studying web development.<br />Thank you for checking out
+        my portfolio!
+      </p>
     </div>
-    <div class="project-section" id="projects">
-      <h2 class="title-projects">These are some of my projects</h2>
+    <div class="projects" id="work">
+      <h2 class="projects__title">These are some of my projects</h2>
 
-      <div class="project-list">
-        <div class="individual-project">
-          <a
-            class="project-tile"
-            href="https://davorj94.github.io/pac-man-game/"
-            target="_blank"
-          >
+      <div class="projects__list">
+        <div class="projects__project">
+          <a href="https://davorj94.github.io/pac-man-game/" target="_blank">
             <img
               class="project-image"
               src="./images/Pac-Man Game JS.png"
               alt="Pac-Man Game"
             />
-            <div class="bottom-section">
-              <code class="code">&lt </code>
-              <p class="text-in-project">Pac-Man Game (JavaScript)</p>
-              <code class="code"> &#47;&gt;</code>
+            <div class="projects__bottom-section">
+              <code>&lt </code>
+              <p class="projects__project-title">Pac-Man Game (JavaScript)</p>
+              <code> &#47;&gt;</code>
             </div>
           </a>
         </div>
-        <div class="individual-project">
+        <div class="projects__project">
           <a
-            class="project-tile"
             href="https://codepen.io/davorjovanovic/full/JjRPWQN"
             target="_blank"
           >
@@ -71,16 +64,15 @@
               src="./images/Calculator using React.png"
               alt="Calculator using React"
             />
-            <div class="bottom-section">
-              <code class="code">&lt </code>
-              <p class="text-in-project">Calculator (React - Hooks)</p>
-              <code class="code"> &#47;&gt;</code>
+            <div class="projects__bottom-section">
+              <code>&lt </code>
+              <p class="projects__project-title">Calculator (React - Hooks)</p>
+              <code> &#47;&gt;</code>
             </div>
           </a>
         </div>
-        <div class="individual-project">
+        <div class="projects__project">
           <a
-            class="project-tile"
             href="https://codepen.io/davorjovanovic/full/abZGyPa"
             target="_blank"
           >
@@ -89,16 +81,17 @@
               src="./images/Random quote generator.png"
               alt="Random quote generator"
             />
-            <div class="bottom-section">
-              <code class="code">&lt </code>
-              <p class="text-in-project">Random Quote Generator (jQuery)</p>
-              <code class="code"> &#47;&gt;</code>
+            <div class="projects__bottom-section">
+              <code>&lt </code>
+              <p class="projects__project-title">
+                Random Quote Generator (jQuery)
+              </p>
+              <code> &#47;&gt;</code>
             </div>
           </a>
         </div>
-        <div class="individual-project">
+        <div class="projects__project">
           <a
-            class="project-tile"
             href="https://codepen.io/davorjovanovic/full/wvWYGaZ"
             target="_blank"
           >
@@ -107,16 +100,15 @@
               src="./images/React Markdown Editor.png"
               alt="React Markdown Editor"
             />
-            <div class="bottom-section">
-              <code class="code">&lt </code>
-              <p class="text-in-project">Markdown Editor (React)</p>
-              <code class="code"> &#47;&gt;</code>
+            <div class="projects__bottom-section">
+              <code>&lt </code>
+              <p class="projects__project-title">Markdown Editor (React)</p>
+              <code> &#47;&gt;</code>
             </div>
           </a>
         </div>
-        <div class="individual-project">
+        <div class="projects__project">
           <a
-            class="project-tile"
             href="https://codepen.io/davorjovanovic/full/gOMEbpY"
             target="_blank"
           >
@@ -125,16 +117,17 @@
               src="./images/Instrument player React.png"
               alt="Instrument player React"
             />
-            <div class="bottom-section">
-              <code class="code">&lt </code>
-              <p class="text-in-project">Multiple Instrument Player (React)</p>
-              <code class="code"> &#47;&gt;</code>
+            <div class="projects__bottom-section">
+              <code>&lt </code>
+              <p class="projects__project-title">
+                Multiple Instrument Player (React)
+              </p>
+              <code> &#47;&gt;</code>
             </div>
           </a>
         </div>
-        <div class="individual-project">
+        <div class="projects__project">
           <a
-            class="project-tile"
             href="https://codepen.io/davorjovanovic/full/eYdmbrb"
             target="_blank"
           >
@@ -143,16 +136,15 @@
               src="./images/Pomodoro Clock React.png"
               alt="Pomodoro Clock React"
             />
-            <div class="bottom-section">
-              <code class="code">&lt </code>
-              <p class="text-in-project">Pomodoro Clock (React)</p>
-              <code class="code"> &#47;&gt;</code>
+            <div class="projects__bottom-section">
+              <code>&lt </code>
+              <p class="projects__project-title">Pomodoro Clock (React)</p>
+              <code> &#47;&gt;</code>
             </div>
           </a>
         </div>
-        <div class="individual-project">
+        <div class="projects__project">
           <a
-            class="project-tile"
             href="https://codepen.io/davorjovanovic/full/qBabwao"
             target="_blank"
           >
@@ -161,16 +153,15 @@
               src="./images/Emoji Icons D3.png"
               alt="Emoji Icons D3"
             />
-            <div class="bottom-section">
-              <code class="code">&lt </code>
-              <p class="text-in-project">Emoji Icons (D3.js)</p>
-              <code class="code"> &#47;&gt;</code>
+            <div class="projects__bottom-section">
+              <code>&lt </code>
+              <p class="projects__project-title">Emoji Icons (D3.js)</p>
+              <code> &#47;&gt;</code>
             </div>
           </a>
         </div>
-        <div class="individual-project">
+        <div class="projects__project">
           <a
-            class="project-tile"
             href="https://codepen.io/davorjovanovic/full/YzGGXeb"
             target="_blank"
           >
@@ -179,16 +170,15 @@
               src="./images/Basic Charts in D3.png"
               alt="Basic Charts in D3"
             />
-            <div class="bottom-section">
-              <code class="code">&lt </code>
-              <p class="text-in-project">Basic Charts (D3.js)</p>
-              <code class="code"> &#47;&gt;</code>
+            <div class="projects__bottom-section">
+              <code>&lt </code>
+              <p class="projects__project-title">Basic Charts (D3.js)</p>
+              <code> &#47;&gt;</code>
             </div>
           </a>
         </div>
-        <div class="individual-project">
+        <div class="projects__project">
           <a
-            class="project-tile"
             href="https://codepen.io/davorjovanovic/full/poEPmrG"
             target="_blank"
           >
@@ -197,16 +187,17 @@
               src="./images/Interactive Bar Chart D3.png"
               alt="Interactive Bar Chart D3"
             />
-            <div class="bottom-section">
-              <code class="code">&lt </code>
-              <p class="text-in-project">Interactive Bar Chart (D3.js)</p>
-              <code class="code"> &#47;&gt;</code>
+            <div class="projects__bottom-section">
+              <code>&lt </code>
+              <p class="projects__project-title">
+                Interactive Bar Chart (D3.js)
+              </p>
+              <code> &#47;&gt;</code>
             </div>
           </a>
         </div>
-        <div class="individual-project">
+        <div class="projects__project">
           <a
-            class="project-tile"
             href="https://codepen.io/davorjovanovic/full/poERZgR"
             target="_blank"
           >
@@ -215,16 +206,15 @@
               src="./images/World Map D3.png"
               alt="World Map D3"
             />
-            <div class="bottom-section">
-              <code class="code">&lt </code>
-              <p class="text-in-project">World Map (D3.js)</p>
-              <code class="code"> &#47;&gt;</code>
+            <div class="projects__bottom-section">
+              <code>&lt </code>
+              <p class="projects__project-title">World Map (D3.js)</p>
+              <code> &#47;&gt;</code>
             </div>
           </a>
         </div>
-        <div class="individual-project">
+        <div class="projects__project">
           <a
-            class="project-tile"
             href="https://codepen.io/davorjovanovic/full/XWjgLzj"
             target="_blank"
           >
@@ -233,16 +223,17 @@
               src="./images/Interactive Scatter Plot D3.png"
               alt="Interactive Scatter Plot D3"
             />
-            <div class="bottom-section">
-              <code class="code">&lt </code>
-              <p class="text-in-project">Interactive Scatter Plot (D3.js)</p>
-              <code class="code"> &#47;&gt;</code>
+            <div class="projects__bottom-section">
+              <code>&lt </code>
+              <p class="projects__project-title">
+                Interactive Scatter Plot (D3.js)
+              </p>
+              <code> &#47;&gt;</code>
             </div>
           </a>
         </div>
-        <div class="individual-project">
+        <div class="projects__project">
           <a
-            class="project-tile"
             href="https://codepen.io/davorjovanovic/full/OJRzPwq"
             target="_blank"
           >
@@ -251,18 +242,17 @@
               src="./images/Continuous Legend Interactive Heat Map D3.png"
               alt="Continuous Legend Interactive Heat Map D3"
             />
-            <div class="bottom-section">
-              <code class="code">&lt </code>
-              <p class="text-in-project">
+            <div class="projects__bottom-section">
+              <code>&lt </code>
+              <p class="projects__project-title">
                 Continuous Legend Interactive Heat Map (D3.js)
               </p>
-              <code class="code"> &#47;&gt;</code>
+              <code> &#47;&gt;</code>
             </div>
           </a>
         </div>
-        <div class="individual-project">
+        <div class="projects__project">
           <a
-            class="project-tile"
             href="https://codepen.io/davorjovanovic/full/JjRMdzz"
             target="_blank"
           >
@@ -271,18 +261,17 @@
               src="./images/Rectangle Legend Interactive Heat Map D3.png"
               alt="Rectangle Legend Interactive Heat Map D3"
             />
-            <div class="bottom-section">
-              <code class="code">&lt </code>
-              <p class="text-in-project">
+            <div class="projects__bottom-section">
+              <code>&lt </code>
+              <p class="projects__project-title">
                 Rectangle Legend Interactive Heat Map (D3.js)
               </p>
-              <code class="code"> &#47;&gt;</code>
+              <code> &#47;&gt;</code>
             </div>
           </a>
         </div>
-        <div class="individual-project">
+        <div class="projects__project">
           <a
-            class="project-tile"
             href="https://codepen.io/davorjovanovic/full/yLaKMKw"
             target="_blank"
           >
@@ -291,16 +280,17 @@
               src="./images/Dynamic Choropleth Map D3.png"
               alt="Dynamic Choropleth Map D3"
             />
-            <div class="bottom-section">
-              <code class="code">&lt </code>
-              <p class="text-in-project">Dynamic Choropleth Map (D3.js)</p>
-              <code class="code"> &#47;&gt;</code>
+            <div class="projects__bottom-section">
+              <code>&lt </code>
+              <p class="projects__project-title">
+                Dynamic Choropleth Map (D3.js)
+              </p>
+              <code> &#47;&gt;</code>
             </div>
           </a>
         </div>
-        <div class="individual-project">
+        <div class="projects__project">
           <a
-            class="project-tile"
             href="https://codepen.io/davorjovanovic/full/WNGJNZG"
             target="_blank"
           >
@@ -309,18 +299,17 @@
               src="./images/Dynamic TreeMap D3.png"
               alt="Dynamic TreeMap D3"
             />
-            <div class="bottom-section">
-              <code class="code">&lt </code>
-              <p class="text-in-project">
+            <div class="projects__bottom-section">
+              <code>&lt </code>
+              <p class="projects__project-title">
                 Dynamic TreeMap - Multiple Data Sources (D3.js)
               </p>
-              <code class="code"> &#47;&gt;</code>
+              <code> &#47;&gt;</code>
             </div>
           </a>
         </div>
-        <div class="individual-project">
+        <div class="projects__project">
           <a
-            class="project-tile"
             href="https://codepen.io/davorjovanovic/full/zYoYYzY"
             target="_blank"
           >
@@ -329,18 +318,17 @@
               src="./images/Living Simple Life Page.png"
               alt="Living Simple Life Page"
             />
-            <div class="bottom-section">
-              <code class="code">&lt </code>
-              <p class="text-in-project">
+            <div class="projects__bottom-section">
+              <code>&lt </code>
+              <p class="projects__project-title">
                 Living Simple Life Page (HTML & SASS)
               </p>
-              <code class="code"> &#47;&gt;</code>
+              <code> &#47;&gt;</code>
             </div>
           </a>
         </div>
-        <div class="individual-project">
+        <div class="projects__project">
           <a
-            class="project-tile"
             href="https://codepen.io/davorjovanovic/full/WqBNPz"
             target="_blank"
           >
@@ -349,18 +337,17 @@
               src="./images/Technical Documentation Page.png"
               alt="Technical Documentation Page"
             />
-            <div class="bottom-section">
-              <code class="code">&lt </code>
-              <p class="text-in-project">
+            <div class="projects__bottom-section">
+              <code>&lt </code>
+              <p class="projects__project-title">
                 Technical Documentation Page (HTML & CSS)
               </p>
-              <code class="code"> &#47;&gt;</code>
+              <code> &#47;&gt;</code>
             </div>
           </a>
         </div>
-        <div class="individual-project">
+        <div class="projects__project">
           <a
-            class="project-tile"
             href="https://codepen.io/davorjovanovic/full/YoBrBw"
             target="_blank"
           >
@@ -369,16 +356,17 @@
               src="./images/Product Landing Page.png"
               alt="Product Landing Page"
             />
-            <div class="bottom-section">
-              <code class="code">&lt </code>
-              <p class="text-in-project">Product Landing Page (HTML & CSS)</p>
-              <code class="code"> &#47;&gt;</code>
+            <div class="projects__bottom-section">
+              <code>&lt </code>
+              <p class="projects__project-title">
+                Product Landing Page (HTML & CSS)
+              </p>
+              <code> &#47;&gt;</code>
             </div>
           </a>
         </div>
-        <div class="individual-project">
+        <div class="projects__project">
           <a
-            class="project-tile"
             href="https://codepen.io/davorjovanovic/full/xoyveN"
             target="_blank"
           >
@@ -387,16 +375,15 @@
               src="./images/Survey Form.png"
               alt="Survey form"
             />
-            <div class="bottom-section">
-              <code class="code">&lt </code>
-              <p class="text-in-project">Survey Form (HTML & CSS)</p>
-              <code class="code"> &#47;&gt;</code>
+            <div class="projects__bottom-section">
+              <code>&lt </code>
+              <p class="projects__project-title">Survey Form (HTML & CSS)</p>
+              <code> &#47;&gt;</code>
             </div>
           </a>
         </div>
-        <div class="individual-project">
+        <div class="projects__project">
           <a
-            class="project-tile"
             href="https://codepen.io/davorjovanovic/full/wLYLYw"
             target="_blank"
           >
@@ -405,28 +392,24 @@
               src="./images/Tribute Page.png"
               alt="Tribute Page"
             />
-            <div class="bottom-section">
-              <code class="code">&lt </code>
-              <p class="text-in-project">Tribute Page (HTML & CSS)</p>
-              <code class="code"> &#47;&gt;</code>
+            <div class="projects__bottom-section">
+              <code>&lt </code>
+              <p class="projects__project-title">Tribute Page (HTML & CSS)</p>
+              <code> &#47;&gt;</code>
             </div>
           </a>
         </div>
-        <div class="individual-project">
-          <a
-            class="project-tile"
-            href="https://davorj94.github.io/practicing-css/"
-            target="_blank"
-          >
+        <div class="projects__project">
+          <a href="https://davorj94.github.io/practicing-css/" target="_blank">
             <img
               class="project-image"
               src="./images/CSS Plain Practicing.png"
               alt="CSS practice"
             />
-            <div class="bottom-section">
-              <code class="code">&lt </code>
-              <p class="text-in-project">CSS Practicing (HTML & CSS)</p>
-              <code class="code"> &#47;&gt;</code>
+            <div class="projects__bottom-section">
+              <code>&lt </code>
+              <p class="projects__project-title">CSS Practicing (HTML & CSS)</p>
+              <code> &#47;&gt;</code>
             </div>
           </a>
         </div>
@@ -437,13 +420,12 @@
         </button>
       </form>
     </div>
-    <div class="contact" id="contact-section">
-      <p id="header-in-contact" class="contact-text">Let's work together!</p>
-      <p id="text-contact" class="contact-text">How do you take your coffee?</p>
-      <div class="links-contact">
+    <div class="contact" id="contact">
+      <p class="contact-text contact__title">Let's work together!</p>
+      <p class="contact-text contact__subtitle">How do you take your coffee?</p>
+      <div class="contact__links">
         <a
-          class="linkage"
-          id="profile-link"
+          class="contact__individual-link"
           href="https://www.facebook.com/davor.jovanovic.925"
           alt="facebook"
           type="submit"
@@ -451,28 +433,28 @@
           ><i class="fab fa-facebook-square"></i>Facebook</a
         >
         <a
-          class="linkage"
+          class="contact__individual-link"
           href="https://www.linkedin.com/in/davor-jovanovi%C4%87/"
           type="submit"
-          alt="linkedin"
+          alt="linkedIn"
           target="_blank"
           ><i class="fab fa-linkedin"></i>LinkedIn</a
         >
         <a
-          class="linkage"
+          class="contact__individual-link"
           href="https://twitter.com/Davor81090129"
           type="submit"
           target="_blank"
           ><i class="fab fa-twitter"></i>Twitter</a
         >
         <a
-          class="linkage"
+          class="contact__individual-link"
           href="mailto:davorjovanovic94@gmail.com"
           type="submit"
           ><i class="fas fa-envelope"></i>Email</a
         >
         <a
-          class="linkage"
+          class="contact__individual-link"
           href="https://github.com/DavorJ94"
           type="submit"
           target="_blank"
@@ -480,14 +462,12 @@
         >
       </div>
     </div>
-    <footer class="footer-bottom">
-      <p id="text-footer" class="footer-text">
+    <footer>
+      <p>
         Visitor, I hope you have a great day, and thank you for reading this
         far!
       </p>
-      <p id="rights" class="footer-text">
-        <i class="far fa-copyright"></i> All rights reserved.
-      </p>
+      <p><i class="far fa-copyright"></i> All rights reserved.</p>
     </footer>
   </body>
 </html>
