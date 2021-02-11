@@ -15,7 +15,7 @@ img {
   display: block;
   width: 100%;
   object-fit: cover;
-  object-position: top;
+  object-position: center;
 }
 .welcome-section {
   display: flex;
@@ -100,8 +100,13 @@ h1 {
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   border-radius: 2px;
 }
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 .project-image {
-  width: 100%;
+  display: inline-block;
   object-fit: cover;
   height: 380px;
 }
@@ -118,15 +123,19 @@ h1 {
 .bottom-section {
   display: flex;
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   column-gap: 1em;
   align-content: center;
   justify-content: center;
   padding: 1em 0;
+  line-height: 1.4em;
+  min-height: 2.8em;
 }
 .text-in-project {
   color: white;
   font-size: 1.2rem;
+  margin: auto 0;
+  width: 80%;
 }
 .code {
   color: #303841;
@@ -319,7 +328,7 @@ h1 {
   }
 }
 .items:hover {
-  background-color: gray;
+  background-color: orange;
 }
 .welcome-section {
   background-color: black;
