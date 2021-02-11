@@ -2,13 +2,15 @@
   margin: 0;
   padding: 0;
 }
-html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
 
 a {
   text-decoration: none;
+}
+
+code {
+  color: #303841;
+  font-size: 1.5rem;
+  margin: auto 0;
 }
 
 img {
@@ -17,25 +19,12 @@ img {
   object-fit: cover;
   object-position: center;
 }
-.welcome-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  text-align: center;
-  height: 100vh;
-  background-image: url("./images/Front\ Image.jpg");
-  background-size: cover;
-  background-position: center;
-  font-family: "Raleway", sans-serif;
-}
+
 h1 {
   font-size: 5em;
   color: #ffb100;
   font-family: "Poppins";
-  text-shadow: 5px 0 0 black;
-  margin-bottom: 50px;
-  margin-top: 10vh;
+  text-shadow: 5px 0 0 rgb(20, 20, 20);
   background: repeating-linear-gradient(
     -45deg,
     rgba(253, 150, 0, 0.4),
@@ -44,6 +33,18 @@ h1 {
     rgba(0, 0, 0, 0.5) 40px
   );
 }
+
+.welcome-section {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-image: url("./images/Front\ Image.jpg");
+  background-size: cover;
+}
+
 .text-in-welcome {
   color: #ffb133;
   line-height: 2;
@@ -59,15 +60,7 @@ h1 {
     rgba(0, 0, 0, 0.5) 40px
   );
 }
-@media (max-width: 840px) {
-  .text-in-welcome {
-    font-size: 1em;
-    font-style: italic;
-  }
-  h1 {
-    font-size: 3em;
-  }
-}
+
 .project-section {
   text-align: center;
   background-color: #003b66;
@@ -81,11 +74,7 @@ h1 {
   font-size: 3rem;
   color: white;
 }
-@media (max-width: 28.75rem) {
-  .title-projects {
-    font-size: 4rem;
-  }
-}
+
 .project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -95,29 +84,23 @@ h1 {
   margin: 0 auto;
   margin-bottom: 6rem;
 }
+
 .individual-project {
   background: #303841;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   border-radius: 2px;
 }
+
 .project-tile {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+
 .project-image {
   display: inline-block;
   object-fit: cover;
   height: 380px;
-}
-@media (max-width: 30.625em) {
-  .project-section {
-    padding: 6rem 1rem;
-  }
-
-  .project-list {
-    grid-template-columns: 1fr;
-  }
 }
 
 .bottom-section {
@@ -131,16 +114,12 @@ h1 {
   line-height: 1.4em;
   min-height: 2.8em;
 }
+
 .text-in-project {
   color: white;
   font-size: 1.2rem;
   margin: auto 0;
   width: 80%;
-}
-.code {
-  color: #303841;
-  font-size: 1.5rem;
-  margin: auto 0;
 }
 
 .individual-project:hover code,
@@ -161,50 +140,57 @@ h1 {
   cursor: pointer;
   width: 10rem;
   transition: all 0.5s ease;
+  outline: none;
 }
+
 .btn-show-all i {
   padding-left: 7px;
   transition: transform 0.5s ease;
 }
+
 .btn-show-all:hover i,
 .btn-show-all:focus i {
   transform: translateX(6px);
 }
+
 .btn-show-all:hover,
 .btn-show-all:focus {
   background-color: orange;
-  transition: background-color 0.7s ease-out;
-  outline: none;
+  transition: background-color 0.5s ease-out;
 }
+
 .btn-show-all:active {
   border: none;
   background-color: darkorange;
 }
+
 .contact {
   display: flex;
+  background-color: #303841;
   flex-direction: column;
   justify-content: center;
-  height: 89vh;
-  align-items: center;
+  height: 100vh;
   text-align: center;
-  background-color: #303841;
   align-content: center;
 }
 
 .contact-text {
   display: inline-block;
-  color: white;
   font-family: "sans-serif";
+  color: white;
 }
+
 #text-contact {
   margin-bottom: 15vh;
   font-style: italic;
   font-size: 1.7rem;
 }
+
 #header-in-contact {
   font-size: 5rem;
   padding-bottom: 1rem;
 }
+
 .links-contact {
   display: flex;
   color: white;
@@ -214,12 +200,14 @@ h1 {
   font-size: 2rem;
   justify-content: center;
 }
+
 .linkage {
   padding: 20px;
   text-decoration: none;
   color: white;
   transition: transform 0.3s ease-out;
 }
+
 .links-contact i {
   padding-right: 7px;
 }
@@ -227,31 +215,18 @@ h1 {
 .linkage:focus {
   transform: translateY(9px);
 }
-@media (max-width: 610px) {
-  #text-contact {
-    margin-bottom: 15vh;
-    font-style: italic;
-    font-size: 1.1rem;
-  }
-  #header-in-contact {
-    font-size: 3rem;
-    padding-bottom: 10px;
-  }
-  .links-contact {
-    font-size: 1.5rem;
-  }
-}
+
 .footer-bottom {
   display: flex;
   background-color: #303841;
   padding: 2rem;
-  border-top: 0.3rem solid #be3144;
+  border-top: 0.3rem solid orange;
   justify-content: space-between;
 }
 
 .footer-text {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-left: 2em;
 }
 #text-footer {
@@ -273,7 +248,6 @@ h1 {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #be3144;
   width: 100%;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.6);
   background: repeating-linear-gradient(
@@ -284,7 +258,7 @@ h1 {
     rgba(255, 177, 68, 1) 50px
   );
 }
-.unord-list {
+.unordered-list {
   display: flex;
   list-style: none;
   margin-right: 20px;
@@ -299,7 +273,36 @@ h1 {
   font-weight: 600;
   text-decoration: none;
 }
-@media (max-width: 580px) {
+
+.items:hover {
+  background-color: orange;
+}
+.welcome-section {
+  background-color: black;
+}
+
+@media (max-width: 840px) {
+  .text-in-welcome {
+    font-size: 1em;
+  }
+  h1 {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 610px) {
+  #text-contact {
+    margin-bottom: 15vh;
+    font-style: italic;
+    font-size: 1.1rem;
+  }
+  #header-in-contact {
+    font-size: 3rem;
+    padding-bottom: 10px;
+  }
+  .links-contact {
+    font-size: 1.5rem;
+  }
   .footer-bottom {
     flex-direction: column;
     text-align: center;
@@ -314,7 +317,7 @@ h1 {
   #navbar {
     justify-content: center;
   }
-  .unord-list {
+  .unordered-list {
     padding-right: 0px;
     margin-right: 0px;
   }
@@ -322,14 +325,8 @@ h1 {
     font-size: 1.6rem;
   }
 }
-@media (max-width: 1320px) {
-  .footer-text {
-    font-size: 1.1rem;
+@media (max-width: 490px) {
+  .project-list {
+    grid-template-columns: 1fr;
   }
-}
-.items:hover {
-  background-color: orange;
-}
-.welcome-section {
-  background-color: black;
 }
