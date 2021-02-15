@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+  font-family: "Times New Roman", Times, serif;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -15,6 +17,38 @@ code {
   color: #303841;
   font-size: 1.5rem;
   margin: auto 0;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(255, 177, 68, 0.5),
+    rgba(0, 0, 0, 0.8) 8px,
+    rgba(0, 0, 0, 0.8) 100%,
+    rgba(255, 177, 68, 0.5) 50px
+  );
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.6);
+}
+.nav-link {
+  color: whitesmoke;
+  font-size: 1.5rem;
+  row-gap: 1rem;
+  height: 100%;
+  padding: 0.5em 2em;
+  margin-right: 1em;
+  font-weight: 700;
+}
+
+.navbar-toggler {
+  margin-left: auto;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: orange;
 }
 
 img {
@@ -36,12 +70,6 @@ h1 {
     rgba(0, 0, 0, 0.3) 20px,
     rgba(0, 0, 0, 0.5) 40px
   );
-}
-
-ul {
-  display: flex;
-  list-style: none;
-  margin-right: 20px;
 }
 
 .about {
@@ -231,40 +259,9 @@ footer {
   font-style: italic;
 }
 
-.navbar {
-  display: flex;
-  justify-content: flex-end;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.6);
-  background: repeating-linear-gradient(
-    0deg,
-    rgba(255, 177, 68, 1),
-    rgba(0, 0, 0, 0.8) 8px,
-    rgba(0, 0, 0, 0.8) 100%,
-    rgba(255, 177, 68, 1) 50px
-  );
-}
-
-.navbar__item {
-  display: block;
-  padding: 1.5rem;
-  color: white;
-  font-size: 2rem;
-  font-family: "sans-serif";
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.navbar__item:hover {
-  background-color: orange;
-}
-
 @media (max-width: 840px) {
   h1 {
-    font-size: 3em;
+    font-size: 2.5rem;
   }
 
   .about__text {
@@ -279,9 +276,12 @@ footer {
 @media (max-width: 610px) {
   footer {
     flex-direction: column;
-    row-gap: 1.5em;
     text-align: center;
     font-size: 1rem;
+    margin-bottom: 0;
+  }
+  footer p {
+    margin-bottom: 0.5em;
   }
 
   .contact__title {
@@ -295,19 +295,22 @@ footer {
   }
 
   .contact__links {
-    font-size: 1.5rem;
-  }
-
-  .navbar {
-    justify-content: center;
-  }
-
-  .navbar__item {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 490px) {
   .projects__list {
     grid-template-columns: 1fr;
+  }
+  .project-image {
+    height: auto;
+  }
+  .contact {
+    padding-bottom: 8em;
+  }
+  .contact__title {
+    font-size: 3rem;
+    margin-top: 2em;
+    padding-bottom: 10px;
   }
 }
