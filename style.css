@@ -248,6 +248,10 @@ footer {
   );
 }
 
+.nav-toggle {
+  display: none;
+}
+
 .navbar__item {
   display: block;
   padding: 1.5rem;
@@ -269,6 +273,9 @@ footer {
 
   .about__text {
     font-size: 1em;
+  }
+  .navbar__item {
+    font-size: 1.5em;
   }
 
   .contact {
@@ -299,11 +306,101 @@ footer {
   }
 
   .navbar {
-    justify-content: center;
+    position: fixed;
+    justify-content: flex-start;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(100%);
+  }
+
+  .navbar__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0;
+    margin-top: 3em;
+    padding: 0;
   }
 
   .navbar__item {
-    font-size: 1.1rem;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+
+  .navbar__item:hover {
+    background-color: transparent;
+    color: orange;
+  }
+
+  .nav-toggle {
+    padding: 0em;
+    background: transparent;
+    display: block;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 0.8em;
+    top: 1.5em;
+    z-index: 1000;
+  }
+
+  .nav-open .navbar {
+    transform: translateX(50%);
+  }
+
+  .nav-toggle {
+    position: fixed;
+    outline: none;
+  }
+
+  .nav-open .hamburger {
+    transform: rotate(0.625turn);
+  }
+
+  .nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
+  }
+
+  .nav-open .hamburger::after {
+    opacity: 0;
+  }
+
+  .hamburger {
+    display: block;
+    position: relative;
+  }
+
+  .hamburger,
+  .hamburger::before,
+  .hamburger::after {
+    background: orange;
+    width: 2em;
+    height: 2px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+    box-shadow: 0.8px 0.8px 0.8px 0.8px #1c1c1c;
+  }
+
+  .hamburger::before,
+  .hamburger::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  .hamburger::before {
+    top: 6px;
+  }
+  .hamburger::after {
+    bottom: 6px;
   }
 }
 @media (max-width: 490px) {
