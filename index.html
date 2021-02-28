@@ -9,9 +9,10 @@
       content="HTML, CSS, JavaScript, React, D3.js, jQuery, Responsive, Web, Design, Passion"
     />
     <meta name="author" content="Davor Jovanovic" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
     <link rel="icon" href="images/Tab Image.png" />
     <link
       rel="stylesheet"
@@ -21,8 +22,11 @@
     <title>Personal portfolio</title>
   </head>
   <body>
+    <button class="nav-toggle" aria-label="toggle navigation" tabindex="0">
+      <span class="hamburger"></span>
+    </button>
     <nav class="navbar">
-      <ul>
+      <ul class="navbar__list">
         <li><a class="navbar__item" href="#about">About</a></li>
         <li><a class="navbar__item" href="#work">Work</a></li>
         <li><a class="navbar__item" href="#contact">Contact</a></li>
