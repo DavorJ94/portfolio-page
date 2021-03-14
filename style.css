@@ -340,12 +340,13 @@ footer {
   }
 
   .nav-toggle {
-    padding: 0em;
+    padding: 6px 0em;
     background: transparent;
     display: block;
     border: 0;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
+    outline: none;
     right: 0.8em;
     top: 1.5em;
     z-index: 1000;
@@ -353,11 +354,6 @@ footer {
 
   .nav-open .navbar {
     transform: translateX(40%);
-  }
-
-  .nav-toggle {
-    position: fixed;
-    outline: none;
   }
 
   .nav-open .hamburger {
